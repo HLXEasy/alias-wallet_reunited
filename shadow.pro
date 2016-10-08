@@ -286,7 +286,8 @@ HEADERS += \
     src/qt/trafficgraphwidget.h \
     src/qt/messagemodel.h \
     src/qt/shadowgui.h \
-    src/qt/shadowbridge.h
+    src/qt/shadowbridge.h \
+    src/qt/bridgetranslations.h
 
 SOURCES += \
     src/alert.cpp \
