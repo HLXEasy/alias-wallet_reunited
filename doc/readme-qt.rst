@@ -23,7 +23,7 @@ then execute the following:
 
 Alternatively, install Qt Creator and open the `shadow.pro` file.
 
-An executable named `shadow` will be built.
+An executable named `umbra` will be built.
 
 
 Windows
