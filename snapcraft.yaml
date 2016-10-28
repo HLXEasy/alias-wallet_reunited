@@ -14,7 +14,7 @@ confinement: strict
 
 apps:
   shadow:
-    command: desktop-launch $SNAP/usr/bin/local/umbra
+    command: desktop-launch $SNAP/usr/local/bin/umbra
     plugs: [network, network-bind, unity7]
 
 parts:
