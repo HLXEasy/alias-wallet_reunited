@@ -6,6 +6,9 @@ DEFINES += BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE
 CONFIG += no_include_pwd
 CONFIG += thread
 
+target.path = /usr/local/bin/
+INSTALLS += target
+
 # Mobile devices
 android:ios{
     CONFIG += mobility
@@ -369,7 +372,7 @@ SOURCES += \
     src/qt/shadowgui.cpp \
     src/qt/shadow.cpp \
     src/qt/shadowbridge.cpp
-    
+
 
 FORMS += \
     src/qt/forms/coincontroldialog.ui \
