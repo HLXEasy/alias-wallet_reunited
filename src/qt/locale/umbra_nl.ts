@@ -4,7 +4,7 @@
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
         <source>About ShadowCoin</source>
-        <translation>Over ShadowCoin</translation>
+        <translation>Over Shadow</translation>
     </message>
     <message>
         <location line="+39"/>
@@ -1623,7 +1623,7 @@ Kring grootte van één is niet geheim en tast het netwerk aan.</translation>
     <message>
         <location line="+1"/>
         <source>i2p connection offline</source>
-        <translation type="unfinished"/>
+        <translation>I2p connectie offline</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1663,7 +1663,7 @@ Kring grootte van één is niet geheim en tast het netwerk aan.</translation>
     <message>
         <location line="+1"/>
         <source>Inputs</source>
-        <translation type="unfinished"/>
+        <translation>Invoer</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1673,7 +1673,7 @@ Kring grootte van één is niet geheim en tast het netwerk aan.</translation>
     <message>
         <location line="+1"/>
         <source>Outputs</source>
-        <translation type="unfinished"/>
+        <translation>Uitvoer</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1718,12 +1718,12 @@ Kring grootte van één is niet geheim en tast het netwerk aan.</translation>
     <message>
         <location line="+1"/>
         <source>Your total balance</source>
-        <translation type="unfinished"/>
+        <translation>Uw totaalbalans</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Balances overview</source>
-        <translation type="unfinished"/>
+        <translation>Balans overzicht</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1743,7 +1743,7 @@ Kring grootte van één is niet geheim en tast het netwerk aan.</translation>
     <message>
         <location line="+1"/>
         <source>Choose from address book</source>
-        <translation type="unfinished"/>
+        <translation>Kies van adresboek</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1753,7 +1753,7 @@ Kring grootte van één is niet geheim en tast het netwerk aan.</translation>
     <message>
         <location line="+1"/>
         <source>Remove this recipient</source>
-        <translation type="unfinished"/>
+        <translation>Verwijder deze ontvanger</translation>
     </message>
     <message>
         <location line="+1"/>
