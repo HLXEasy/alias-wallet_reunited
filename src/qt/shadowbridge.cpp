@@ -874,7 +874,7 @@ void ShadowBridge::appendMessage(int row)
                 window->messageModel->index(row, MessageModel::ReceivedDateTime).data().toDateTime().toTime_t(),
                 window->messageModel->index(row, MessageModel::Label)           .data(MessageModel::LabelRole).toString().toHtmlEscaped(),
                 window->messageModel->index(row, MessageModel::Label)           .data().toString().replace("\"","\\\"").replace("\\", "\\\\").replace("/", "\\/").toHtmlEscaped(),
-                window->messageModel->index(row, MessageModel::LabelTo)           .data().toString().replace("\"","\\\"").replace("\\", "\\\\").replace("/", "\\/").toHtmlEscaped(),
+                window->messageModel->index(row, MessageModel::LabelTo)         .data().toString().replace("\"","\\\"").replace("\\", "\\\\").replace("/", "\\/").toHtmlEscaped(),
                 window->messageModel->index(row, MessageModel::ToAddress)       .data().toString().toHtmlEscaped(),
                 window->messageModel->index(row, MessageModel::FromAddress)     .data().toString().toHtmlEscaped(),
                 window->messageModel->index(row, MessageModel::Read)            .data().toBool(),
@@ -910,7 +910,12 @@ bool ShadowBridge::markMessageAsRead(QString key)
 
 QString ShadowBridge::getPubKey(QString address)
 {
-    return addressModel->atm->pubkeyForAddress(address);;
+    return addressModel->atm->pubkeyForAddress(address);
+}
+
+QString ShadowBridge::addressForPubKey(QString pubkey)
+{
+    return addressModel->atm->addressForPubkey(pubkey);
 }
 
 bool ShadowBridge::setPubKey(QString address, QString pubkey)
@@ -921,6 +926,8 @@ bool ShadowBridge::setPubKey(QString address, QString pubkey)
     int res = SecureMsgAddAddress(sendTo, pbkey);
     return res == 0||res == 4;
 }
+
+
 
 bool ShadowBridge::sendMessage(const QString &address, const QString &message, const QString &from)
 {
